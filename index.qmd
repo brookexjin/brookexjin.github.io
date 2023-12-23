@@ -1,0 +1,123 @@
+---
+about:
+  template: jolla
+  id: about-block
+  #image: "img/my_image.jpg"
+  #links:
+    #- icon: twitter
+      #text: Twitter
+      #href: https://twitter.com/MarvinSchmittML
+    #- icon: github
+      #text: Github
+      #href: https://github.com/marvinschmitt
+    #- icon: linkedin
+      #text: LinkedIn
+      #href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
+    #- icon: envelope
+      #text: Email
+      #href: "mailto:mail.marvinschmitt@gmail.com"  
+---
+
+::: {#about-block}
+:::
+
+# Map of the world :)
+
+
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(leafpop)
+library(mapview)
+
+pts <- tibble(x = c(-81.6944, -82.3646, -76.5019, -70.2568, -70.7626,
+                    -70.1846, -71.0995, -73.5674, -74.006), 
+              y = c(41.4993, 41.4220, 42.4440, 43.6591, 43.0718,
+                    42.0547, 42.3876, 45.5019, 40.7128)) |>
+  st_as_sf(coords = c("x", "y"), crs = 4326)
+
+pts$place <- c("Cleveland","Vermilion","Ithaca","Portland","Portsmouth",
+               "Provincetown","Somerville","Montreal","NYC")
+
+cleveland <- c("data/Cleveland/cleve1.JPG","data/Cleveland/cleve2.JPG",
+               "data/Cleveland/cleve3.JPG","data/Cleveland/cleve4.JPG")
+
+pts$img[1] <- cleveland[1]
+pts$img2[1] <- cleveland[2]
+pts$img3[1] <- cleveland[3]
+pts$img4[1] <- cleveland[4]
+
+vermilion <- c("data/Vermilion/verm1.JPG","data/Vermilion/verm2.JPG",
+               "data/Vermilion/verm3.JPG","data/Vermilion/verm4.JPG")
+
+pts$img[2] <- vermilion[1]
+pts$img2[2] <- vermilion[2]
+pts$img3[2] <- vermilion[3]
+pts$img4[2] <- vermilion[4]
+
+ithaca <- c("data/Ithaca/ith1.JPG","data/Ithaca/ith2.JPG",
+            "data/Ithaca/ith3.JPG","data/Ithaca/ith4.JPG")
+
+pts$img[3] <- ithaca[1]
+pts$img2[3] <- ithaca[2]
+pts$img3[3] <- ithaca[3]
+pts$img4[3] <- ithaca[4]
+
+portland <- c("data/Portland/portland1.JPG","data/Portland/portland2.JPG",
+              "data/Portland/portland3.JPG","data/Portland/portland4.JPG")
+
+pts$img[4] <- portland[1]
+pts$img2[4] <- portland[2]
+pts$img3[4] <- portland[3]
+pts$img4[4] <- portland[4]
+
+portsmouth <- c("data/Portsmouth/portsmouth1.JPG","data/Portsmouth/portsmouth2.JPG",
+                "data/Portsmouth/portsmouth3.JPG","data/Portsmouth/portsmouth4.JPG")
+
+pts$img[5] <- portsmouth[1]
+pts$img2[5] <- portsmouth[2]
+pts$img3[5] <- portsmouth[3]
+pts$img4[5] <- portsmouth[4]
+
+provincetown <- c("data/Provincetown/ptown1.JPG","data/Provincetown/ptown2.JPG",
+                  "data/Provincetown/ptown3.JPG","data/Provincetown/ptown4.JPG")
+
+pts$img[6] <- provincetown[1]
+pts$img2[6] <- provincetown[2]
+pts$img3[6] <- provincetown[3]
+pts$img4[6] <- provincetown[4]
+
+somerville <- c("data/Somerville/som1.JPG","data/Somerville/som2.JPG",
+                "data/Somerville/som3.JPG","data/Somerville/som4.JPG")
+
+pts$img[7] <- somerville[1]
+pts$img2[7] <- somerville[2]
+pts$img3[7] <- somerville[3]
+pts$img4[7] <- somerville[4]
+
+montreal <- c("data/Montreal/montreal1.JPG","data/Montreal/montreal2.JPG",
+              "data/Montreal/montreal3.JPG","data/Montreal/montreal4.JPG")
+
+pts$img[8] <- montreal[1]
+pts$img2[8] <- montreal[2]
+pts$img3[8] <- montreal[3]
+pts$img4[8] <- montreal[4]
+
+nyc <- c("data/NYC/nyc1.JPG","data/NYC/nyc3.JPG",
+         "data/NYC/nyc4.JPG","data/NYC/nyc7.JPG")
+
+pts$img[9] <- nyc[1]
+pts$img2[9] <- nyc[2]
+pts$img3[9] <- nyc[3]
+pts$img4[9] <- nyc[4]
+
+leaflet() |>
+  addTiles() |>
+  addCircleMarkers(data = pts, group = "pts") |>
+  addPopupImages(pts$img, group = "pts", width = 200, maxWidth = 400) |>
+  addPopupImages(pts$img2, group = "pts", width = 200, maxWidth = 400) |>
+  addPopupImages(pts$img3, group = "pts", width = 200, maxWidth = 400) |>
+  addPopupImages(pts$img4, group = "pts", width = 200, maxWidth = 400)
+```
+
