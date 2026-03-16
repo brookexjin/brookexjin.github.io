@@ -5,7 +5,7 @@ permalink: /bio/
 author_profile: true
 ---
 
-I'm Brooke. I'm a PhD student in sociology at Brown University. My research interests lie in environmental sociology, political economy, economic sociology, social movements, and social theory. I spend most of my time thinking about public power, municipal finance, and energy law. Sometimes I also think about the political economy of AI, negativity and a politics of refusal, and the intersection of psychoanalysis and sociology.
+I'm currently a first-year PhD student in sociology at Brown. I spend most of my time thinking about public power, municipal finance, and energy law. Sometimes I also think about the political economy of AI, negativity and a politics of refusal, and the intersection of psychoanalysis and sociology.
 
 Before coming to Brown, I attempted a short-lived career as an environmental planner and policy analyst as I completed a Master in City Planning, with a concentration in environmental policy and planning, at the Massachusetts Institute of Technology. My thesis, advised by J. Phillip Thompson (former Deputy Mayor of New York City during the De Blasio Administration, and a big proponent of democratically owned electricity infrastructure), was on electric power utilities and the possibility for municipalized ownership for a cleaner and more equitable future. During this time at M.I.T., I also did research with Janelle Knox-Hayes on community-engaged renewable energy development, with an emphasis on Indigenous-forward planning.
 
