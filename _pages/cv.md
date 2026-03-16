@@ -7,8 +7,7 @@ redirect_from:
   - /resume
 ---
 
-<object data="Jin_CV_concise.pdf" width="1000" height="1000" type='application/pdf'/>
-
+<object data="../_pages/Jin_CV_concise.pdf" width="1000" height="1000" type='application/pdf'></object>
 
 <!--
 
