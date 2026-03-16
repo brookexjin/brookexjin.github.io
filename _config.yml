@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "Jin.jpg"
   name             : "Brooke Jin"
-  pronouns         : "he, they, or other"  
+  #pronouns         : "he, they, or other"  
   bio              : "PhD student, Brown University department of sociology"
   location         : "Providence, RI"
   email            : "brooke_jin@brown.edu" 
