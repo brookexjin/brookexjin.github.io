@@ -7,6 +7,10 @@ redirect_from:
   - /resume
 ---
 
+<object data="Jin_CV_concise.pdf" width="1000" height="1000" type='application/pdf'/>
+
+
+<!--
 {% include base_path %}
 
 Education
@@ -57,6 +61,8 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
+
+    --!>
   {% endfor %}</ul>
   
 Service and leadership
