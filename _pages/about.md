@@ -13,3 +13,5 @@ Before coming to Brown, I attempted a short-lived career as an environmental pla
 My first, actual career was as a mechanical engineer. After a Bachelor's degree in mechanical engineering, which I completed at Cornell University in 2020, I worked as a mechanical engineer for hardware systems at a start-up in New Jersey, and in Klavs F. Jensen's lab in the department of chemical engineering at M.I.T., where I grazed several projects related to automated molecular discovery and reaction optimization. I came out of this role with roughly the same amount of chemical-engineering knowledge as I had when I entered. But I love mechanical engineering, and talking about it. 
 
 In my free time, I like: writing poetry, going to jazz bars, snowboarding, playing the piano badly, yelling at rowers on the river (as a coxswain, and as a spectator), reading German modernist literature, drawing Lacanian diagrams, watching Edward Yang films, attempting cryptic crossword puzzles, and sewing clothes that look like sacks.
+
+This is my [departmental page](https://sociology.brown.edu/people/brooke-jin). Email me at [brooke_jin@brown.edu](mailto:brooke_jin@brown.edu)!
