@@ -5,4 +5,4 @@ permalink: /writing/
 author_profile: true
 ---
 
-Placeholder for writing and other work
+Placeholder for writing and other work.
